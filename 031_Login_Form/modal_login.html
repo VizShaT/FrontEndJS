@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Modal Login</title>
+        <link rel="stylesheet" href="modal_login_style.css">
+    </head>
+<body>
+    <button onclick="document.getElementById('id01').style.display = 'block'" style='width:auto'>Login</button>
+    <div id="id01" class="modal">
+
+        <form class="modal-content animate" action="/action_page.php">
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('id01').style.display = 'none'" class="close" title="Close Modal">&times;</span>
+                <img src="https://www.w3schools.com/howto/img_avatar2.png" alt="Avatar" class="avatar">
+            </div>
+            <div class="container">
+                <label for="uname"><b>Username</b></label>
+                <input type="text" name="uname" placeholder="Enter your username" required>
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" name="psw" placeholder="Enter your password" required>
+
+                <button type="submit">Login</button>
+                <lebel>
+                    <input type="checkbox" checked="checked" name="remember">Remember Me</input>
+                </lebel>
+            </div>
+
+            <div class="container" style="background-color:#f1f1f1">
+                <button type="button" class="cancelbtn">Cancel</button>
+                <span class="psw">Forget <a href="#">Password?</a></span>
+            </div>
+        </form>
+    </div>
+    <script>
+        var modal = document.getElementById('id01');
+
+        window.onclick = function(event){
+            if (event.target == modal){
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+
+</head>

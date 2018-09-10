@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login</title>
+        <link rel="stylesheet" href="login_style.css">
+    </head>
+<body>
+    <form action="action_page.php">
+        <div class="imgcontainer">
+            <img src="https://www.w3schools.com/howto/img_avatar2.png" alt="Avatar" class="avatar">
+        </div>
+        <div class="container">
+            <label for="uname"><b>Username</b></label>
+            <input type="text" name="uname" placeholder="Enter your username" required>
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" name="psw" placeholder="Enter your password" required>
+
+            <button type="submit">Login</button>
+            <lebel>
+                <input type="checkbox" checked="checked" name="remember">Remember Me</input>
+            </lebel>
+        </div>
+
+        <div class="container" style="background-color:#f1f1f1">
+            <button type="button" class="cancelbtn">Cancel</button>
+            <span class="psw">Forget <a href="#">Password?</a></span>
+        </div>
+    </form>
+</body>
+</head>
